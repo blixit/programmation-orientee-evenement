@@ -4,14 +4,30 @@
     <title>My project</title>
     <style>
         #root {
-            width: 400px;
-            height: 400px;
+            width: 100px;
+            height: 100px;
             background-color: yellow;
+            padding: 50px;
+        }
+        #children {
+            width: 100px;
+            height: 100px;
+            background-color: red;
         }
     </style>
 </head>
 <body>
-    <div id="root" ></div>
+    <div id="root" >
+        <div id="children"></div>
+    </div>
+    <a id="lien-MDN" target="_blank" href="https://developer.mozilla.org/fr/docs/Web/API/EventTarget/addEventListener" >MDN </a>
+
+    <form id="connection-form">
+        <h1>Connexion</h1>
+        <input name="login" >
+        <input name="password" type="password" >
+        <button type="submit">Se connecter</button>
+    </form>
     <script type="text/javascript" src="polyfill.bundle.js"></script>
     <script src="app.bundle.js"></script>
 </body>
