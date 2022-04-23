@@ -20,13 +20,12 @@ function setupListeners () {
     }, 5000);
   }
 
-  let maPremierePromesse = Promise.resolve(null); // new Promise(initPromise);
+  let maPremierePromesse = new Promise(initPromise);
   
   function onSuccess (messageReussite) {
     // messageReussite correspond à ce qui a été passé à 
     // la fonction resolve(...) ci-avant.
     console.log("Youpi ! " + messageReussite)
-    return 
   }
 
   function onError (error) {
